@@ -18,6 +18,22 @@
             <value>UTF-8</value>
         </property>
     </bean>
+    
+    <bean id="downloadPath" class="java.lang.String">
+		<constructor-arg index="0" value="${DOWNLOADPATH}"></constructor-arg>
+	</bean>
+	<bean id="uploadPath" class="java.lang.String">
+		<constructor-arg index="0" value="${UPLOADPATH}"></constructor-arg>
+	</bean>
+	<bean id="tempPath" class="java.lang.String">
+		<constructor-arg index="0" value="${TEMPPATH}"></constructor-arg>
+	</bean>
+	<bean id="encodePath" class="java.lang.String">
+		<constructor-arg index="0" value="${ENCODEPATH}"></constructor-arg>
+	</bean>
+	<bean id="phantomjsPath" class="java.lang.String">
+		<constructor-arg index="0" value="${PHANTOMJSPATH}"></constructor-arg>
+	</bean>
 	
 	<!-- 数据库连接池属性配置 -->
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"

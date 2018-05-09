@@ -125,6 +125,12 @@
       <artifactId>fastjson</artifactId>
       <version>1.1.41</version>
     </dependency>
+    <!-- 映入JSON -->
+    <dependency>
+      <groupId>org.codehaus.jackson</groupId>
+      <artifactId>jackson-mapper-asl</artifactId>
+      <version>1.9.13</version>
+    </dependency>
     <!-- log end -->
     <!-- 上传组件包 -->
     <dependency>
