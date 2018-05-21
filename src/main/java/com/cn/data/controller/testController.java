@@ -19,9 +19,8 @@ public class testController{
 	@Autowired
 	private testService testService;
 	
-	//现金分析
 	@RequestMapping(value = "/findData")
-	public List<Map<String, Object>> findData(Model modal){
+	public List<Map<String, Object>> findData(){
 		return testService.findDataTest();
 	}
 	
