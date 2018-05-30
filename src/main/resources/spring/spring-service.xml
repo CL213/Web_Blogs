@@ -8,6 +8,6 @@
                         http://www.springframework.org/schema/context/spring-context.xsd">
 	
 	<!-- 自动扫描service，将其纳入到spring中管理 -->
-    <context:component-scan base-package="com.cn.*.service" />
+    <context:component-scan base-package="com.cn.*.service,com.cn.redis" />
 	
 </beans>

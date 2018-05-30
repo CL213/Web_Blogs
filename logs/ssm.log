@@ -543,3 +543,1073 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2018-05-08 16:52:42 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
 2018-05-08 16:52:42 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
 2018-05-08 16:52:43 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@6b143ee9: startup date [Tue May 08 16:52:42 GMT+08:00 2018]; root of context hierarchy
+2018-05-25 18:47:35 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-25 18:47:35 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-25 18:47:35 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@36f6e879: startup date [Fri May 25 18:47:35 GMT+08:00 2018]; root of context hierarchy
+2018-05-25 18:47:35 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-25 18:47:35 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-25 18:47:36 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@36f6e879: startup date [Fri May 25 18:47:35 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 15:44:28 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 15:44:28 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 15:44:29 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@13c78c0b: startup date [Mon May 28 15:44:29 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 15:44:29 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 15:44:29 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 15:44:29 [org.springframework.test.context.TestContextManager:322]-[ERROR] Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@19d481b] to prepare test instance [test.test1@1f97cf0d]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'test.test1': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.cn.redis.RedisClientTemplate test.test1.redisClientTemplate; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.cn.redis.RedisClientTemplate] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:292)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:384)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:110)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.cn.redis.RedisClientTemplate test.test1.redisClientTemplate; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.cn.redis.RedisClientTemplate] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289)
+	... 26 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.cn.redis.RedisClientTemplate] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:960)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:480)
+	... 28 more
+2018-05-28 15:44:29 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@13c78c0b: startup date [Mon May 28 15:44:29 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 15:46:38 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 15:46:38 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 15:46:38 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 15:46:38 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 15:46:38 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 15:46:38 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 15:46:39 [org.springframework.test.context.TestContextManager:322]-[ERROR] Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3972a855] to prepare test instance [test.test1@62e7f11d]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'test.test1': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.cn.redis.RedisClientTemplate test.test1.redisClientTemplate; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.cn.redis.RedisClientTemplate] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:292)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:384)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:110)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.cn.redis.RedisClientTemplate test.test1.redisClientTemplate; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.cn.redis.RedisClientTemplate] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289)
+	... 26 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.cn.redis.RedisClientTemplate] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:960)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:480)
+	... 28 more
+2018-05-28 15:46:39 [org.springframework.test.context.TestContextManager:322]-[ERROR] Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3972a855] to prepare test instance [test.test1@6b8ca3c8]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'test.test1': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.cn.redis.RedisClientTemplate test.test1.redisClientTemplate; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.cn.redis.RedisClientTemplate] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:292)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:384)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:110)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.cn.redis.RedisClientTemplate test.test1.redisClientTemplate; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.cn.redis.RedisClientTemplate] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289)
+	... 26 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.cn.redis.RedisClientTemplate] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:960)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:480)
+	... 28 more
+2018-05-28 15:46:39 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 15:46:38 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 15:47:23 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 15:47:23 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 15:47:23 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 15:47:23 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 15:47:23 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 15:47:23 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 15:47:23 [org.springframework.test.context.TestContextManager:322]-[ERROR] Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3972a855] to prepare test instance [test.test1@62e7f11d]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'test.test1': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.cn.redis.RedisClientTemplate test.test1.redisClientTemplate; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.cn.redis.RedisClientTemplate] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:292)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:384)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:110)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.cn.redis.RedisClientTemplate test.test1.redisClientTemplate; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.cn.redis.RedisClientTemplate] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289)
+	... 26 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.cn.redis.RedisClientTemplate] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:960)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:480)
+	... 28 more
+2018-05-28 15:47:23 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 15:47:23 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 15:49:08 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 15:49:08 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 15:49:08 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 15:49:08 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 15:49:08 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 15:49:08 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 15:49:08 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 15:49:08 [org.springframework.test.context.TestContextManager:322]-[ERROR] Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1c93084c] to prepare test instance [test.test1@6ef888f6]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'jedisPoolConfig' defined in class path resource [redis/spring-redis.xml]: Could not resolve placeholder 'redis.pool.maxActive' in string value "${redis.pool.maxActive}"; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'redis.pool.maxActive' in string value "${redis.pool.maxActive}"
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:211)
+	at org.springframework.beans.factory.config.PropertyPlaceholderConfigurer.processProperties(PropertyPlaceholderConfigurer.java:223)
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:86)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:265)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:121)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:250)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 more
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'redis.pool.maxActive' in string value "${redis.pool.maxActive}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.beans.factory.config.PropertyPlaceholderConfigurer$PlaceholderResolvingStringValueResolver.resolveStringValue(PropertyPlaceholderConfigurer.java:259)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue(BeanDefinitionVisitor.java:282)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue(BeanDefinitionVisitor.java:204)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitPropertyValues(BeanDefinitionVisitor.java:141)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitBeanDefinition(BeanDefinitionVisitor.java:82)
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:208)
+	... 37 more
+2018-05-28 15:51:11 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 15:51:11 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 15:51:12 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 15:51:12 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 15:51:12 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 15:51:12 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 15:51:12 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 15:51:12 [org.springframework.test.context.TestContextManager:322]-[ERROR] Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1c93084c] to prepare test instance [test.test1@6ef888f6]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'jedisPoolConfig' defined in class path resource [redis/spring-redis.xml]: Could not resolve placeholder 'redis.pool.maxTotal' in string value "${redis.pool.maxTotal}"; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'redis.pool.maxTotal' in string value "${redis.pool.maxTotal}"
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:211)
+	at org.springframework.beans.factory.config.PropertyPlaceholderConfigurer.processProperties(PropertyPlaceholderConfigurer.java:223)
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:86)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:265)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:162)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:121)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:250)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 more
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'redis.pool.maxTotal' in string value "${redis.pool.maxTotal}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:174)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.beans.factory.config.PropertyPlaceholderConfigurer$PlaceholderResolvingStringValueResolver.resolveStringValue(PropertyPlaceholderConfigurer.java:259)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveStringValue(BeanDefinitionVisitor.java:282)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.resolveValue(BeanDefinitionVisitor.java:204)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitPropertyValues(BeanDefinitionVisitor.java:141)
+	at org.springframework.beans.factory.config.BeanDefinitionVisitor.visitBeanDefinition(BeanDefinitionVisitor.java:82)
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:208)
+	... 37 more
+2018-05-28 15:55:20 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 15:55:20 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 15:55:20 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 15:55:20 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 15:55:20 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 15:55:20 [org.springframework.test.context.TestContextManager:322]-[ERROR] Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1b1473ab] to prepare test instance [test.test1@2f7c2f4f]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'propertyConfigurer' defined in class path resource [mybatis/spring-mybatis-oracle.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'ignore-unresolvable' of bean class [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]: Bean property 'ignore-unresolvable' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1493)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1197)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:150)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:121)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:250)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 more
+Caused by: org.springframework.beans.NotWritablePropertyException: Invalid property 'ignore-unresolvable' of bean class [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]: Bean property 'ignore-unresolvable' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:1064)
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:922)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:82)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:62)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1489)
+	... 41 more
+2018-05-28 15:57:04 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 15:57:04 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 15:57:04 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 15:57:04 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 15:57:04 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 15:57:04 [org.springframework.test.context.TestContextManager:322]-[ERROR] Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@363ee3a2] to prepare test instance [test.test1@4690b489]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'propertyConfigurer' defined in class path resource [mybatis/spring-mybatis-oracle.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'ignore-unresolvable' of bean class [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]: Bean property 'ignore-unresolvable' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1493)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1197)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:150)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:121)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100)
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:250)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 more
+Caused by: org.springframework.beans.NotWritablePropertyException: Invalid property 'ignore-unresolvable' of bean class [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]: Bean property 'ignore-unresolvable' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:1064)
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:922)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:82)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:62)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1489)
+	... 41 more
+2018-05-28 15:57:20 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 15:57:20 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 15:57:20 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 15:57:20 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 15:57:20 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 15:57:20 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 15:57:20 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 15:57:20 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 15:57:20 [org.springframework.test.context.TestContextManager:322]-[ERROR] Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@67f639d3] to prepare test instance [test.test1@6253c26]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'test.test1': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.cn.redis.RedisClientTemplate test.test1.redisClientTemplate; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.cn.redis.RedisClientTemplate] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:292)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:384)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:110)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.cn.redis.RedisClientTemplate test.test1.redisClientTemplate; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.cn.redis.RedisClientTemplate] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:508)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289)
+	... 26 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.cn.redis.RedisClientTemplate] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1100)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:960)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:855)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:480)
+	... 28 more
+2018-05-28 15:57:20 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 15:57:20 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 15:58:39 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 15:58:40 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 15:58:40 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 15:58:40 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 15:58:40 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 15:58:40 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 15:58:40 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 15:58:40 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 15:58:40 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 15:58:40 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 16:01:16 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 16:01:16 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 16:01:16 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 16:01:16 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 16:01:16 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 16:01:16 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 16:01:16 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 16:01:16 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 16:01:17 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 16:01:16 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 17:46:36 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 17:46:36 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 17:46:36 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 17:46:36 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 17:46:36 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 17:46:36 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 17:46:36 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 17:46:36 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 17:46:36 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 17:46:36 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 17:49:44 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 17:49:44 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 17:49:45 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 17:49:45 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 17:49:45 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 17:49:45 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 17:49:45 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 17:49:45 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 17:49:45 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 17:49:45 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 17:57:51 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 17:57:51 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 17:57:52 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 17:57:52 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 17:57:52 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 17:57:52 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 17:57:52 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 17:57:52 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 17:57:52 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 17:57:52 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:03:23 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:03:23 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:03:23 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:03:23 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@212bf671: startup date [Mon May 28 18:03:23 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:03:23 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:03:23 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:03:23 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:03:23 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@212bf671: startup date [Mon May 28 18:03:23 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:06:42 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:06:42 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:06:42 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:06:42 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@212bf671: startup date [Mon May 28 18:06:42 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:06:42 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:06:42 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:06:42 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:06:42 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@212bf671: startup date [Mon May 28 18:06:42 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:07:05 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:07:05 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:07:06 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:07:06 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:07:06 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:07:06 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:07:06 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:07:06 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:07:06 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:07:06 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:07:30 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:07:30 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:07:30 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:07:30 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:07:30 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:07:30 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:07:30 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:07:30 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:07:30 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:07:30 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:07:46 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:07:46 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:07:46 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:07:46 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@212bf671: startup date [Mon May 28 18:07:46 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:07:46 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:07:46 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:07:46 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:07:46 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@212bf671: startup date [Mon May 28 18:07:46 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:10:09 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:10:09 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:10:09 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:10:09 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@212bf671: startup date [Mon May 28 18:10:09 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:10:09 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:10:09 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:10:09 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:10:10 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@212bf671: startup date [Mon May 28 18:10:09 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:10:29 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:10:29 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:10:29 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:10:29 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@212bf671: startup date [Mon May 28 18:10:29 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:10:29 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:10:29 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:10:29 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:10:30 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@212bf671: startup date [Mon May 28 18:10:29 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:10:40 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:10:40 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:10:40 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:10:40 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:10:40 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:10:40 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:10:40 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:10:40 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:10:41 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:10:40 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:11:13 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:11:13 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:11:13 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:11:13 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@212bf671: startup date [Mon May 28 18:11:13 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:11:14 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:11:14 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:11:14 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:13:47 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@212bf671: startup date [Mon May 28 18:11:13 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:14:03 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:14:03 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:14:03 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:14:03 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@212bf671: startup date [Mon May 28 18:14:03 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:14:03 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:14:03 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:14:03 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:14:59 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@212bf671: startup date [Mon May 28 18:14:03 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:15:04 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:15:04 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:15:04 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:15:04 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:15:04 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:15:04 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:15:04 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:15:04 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:15:04 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:15:04 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:15:15 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:15:15 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:15:15 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:15:15 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@212bf671: startup date [Mon May 28 18:15:15 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:15:15 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:15:15 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:15:15 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:19:35 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:19:35 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:19:35 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:19:35 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@212bf671: startup date [Mon May 28 18:19:35 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:19:35 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:19:35 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:19:35 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:27:08 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:27:08 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:27:08 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:27:08 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:27:08 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:27:08 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:27:08 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:27:08 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:27:09 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:27:08 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:28:28 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:28:29 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:28:29 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:28:29 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:28:29 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:28:29 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:28:29 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:28:29 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:28:29 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:28:29 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:29:16 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:29:17 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:29:17 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:29:17 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:29:17 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:29:17 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:29:17 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:29:17 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:29:17 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:29:17 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:30:18 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:30:18 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:30:18 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:30:18 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:30:18 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:30:18 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:30:18 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:30:18 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:30:18 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:30:18 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:30:51 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:30:51 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:30:51 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:30:51 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:30:51 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:30:51 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:30:51 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:30:51 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:30:52 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:30:51 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:32:54 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:32:54 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:32:54 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:32:54 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:32:54 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:32:54 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:32:54 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:32:54 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:32:54 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:32:54 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:35:16 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:35:17 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:35:17 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:35:17 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@13a57a3b: startup date [Mon May 28 18:35:17 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:35:17 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:35:17 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:35:17 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:35:17 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@13a57a3b: startup date [Mon May 28 18:35:17 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:36:52 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:36:52 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:36:52 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:36:52 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@13a57a3b: startup date [Mon May 28 18:36:52 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:36:53 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:36:53 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:36:53 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:36:53 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@13a57a3b: startup date [Mon May 28 18:36:52 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:38:25 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:38:25 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:38:25 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:38:25 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:38:25 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:38:25 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:38:25 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:38:25 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:38:26 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:38:25 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:39:03 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:39:03 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:39:03 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:39:03 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:39:03 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:39:04 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:39:04 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:39:04 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:39:04 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:39:03 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:39:33 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:39:33 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:39:33 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:39:33 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:39:33 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:39:33 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:39:33 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:39:33 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:39:33 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:39:33 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:39:49 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:39:49 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:39:50 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:39:50 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:39:50 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:39:50 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:39:50 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:39:50 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:39:50 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:39:50 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:40:02 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:40:02 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:40:02 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:40:02 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:40:02 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:40:02 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:40:02 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:40:02 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:40:02 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:40:02 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:41:20 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:41:20 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:41:20 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:41:20 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:41:20 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:41:20 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:41:20 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:41:20 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:41:20 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:41:20 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:43:26 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:43:26 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:43:26 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:43:26 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:43:26 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:43:26 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:43:26 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:43:26 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:43:26 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:43:26 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:44:03 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:44:04 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:44:04 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:44:04 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:44:04 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:44:04 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:44:04 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:44:04 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:44:04 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:44:04 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:45:35 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:45:36 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:45:36 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:45:36 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@13a57a3b: startup date [Mon May 28 18:45:36 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:45:36 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:45:36 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:45:36 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:45:36 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@13a57a3b: startup date [Mon May 28 18:45:36 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:46:11 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:46:11 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:46:12 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:46:12 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@13a57a3b: startup date [Mon May 28 18:46:12 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:46:12 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:46:12 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:46:12 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:46:12 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@13a57a3b: startup date [Mon May 28 18:46:12 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:47:47 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:47:47 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:47:47 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:47:47 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:47:47 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:47:47 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:47:47 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:47:47 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:47:47 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:47:47 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:48:02 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:48:02 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:48:02 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:48:02 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:48:02 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:48:02 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:48:02 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:48:02 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:48:03 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:48:02 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:50:20 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:50:20 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:50:20 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:50:20 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:50:20 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:50:20 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:50:20 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:50:20 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:50:20 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:50:20 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:50:29 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:50:29 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:50:29 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:50:29 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:50:29 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:50:29 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:50:29 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:50:29 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:50:29 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:50:29 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:50:36 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:50:37 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:50:37 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:50:37 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:50:37 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:50:37 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:50:37 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:50:37 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:50:37 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:50:37 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:50:44 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:50:44 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:50:44 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:50:44 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:50:44 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:50:44 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:50:44 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:50:44 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:50:45 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:50:44 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:56:46 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:56:46 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:56:46 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:56:46 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:56:46 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:56:46 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:56:46 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:56:46 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:56:47 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:56:46 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:58:55 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:58:55 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:58:55 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:58:55 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:58:55 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:58:55 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:58:55 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:58:55 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:58:55 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:58:55 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:59:36 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 18:59:36 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 18:59:36 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 18:59:36 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:59:36 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 18:59:36 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 18:59:36 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 18:59:36 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 18:59:37 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 18:59:36 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 19:01:22 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 19:01:22 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 19:01:22 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 19:01:22 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 19:01:22 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 19:01:22 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 19:01:22 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 19:01:22 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 19:01:22 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 19:01:22 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 19:02:05 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-28 19:02:05 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-28 19:02:05 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-28 19:02:05 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 19:02:05 GMT+08:00 2018]; root of context hierarchy
+2018-05-28 19:02:05 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-28 19:02:05 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-28 19:02:05 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-28 19:02:06 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Mon May 28 19:02:05 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 11:32:01 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-29 11:32:01 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-29 11:32:01 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-29 11:32:01 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 11:32:01 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 11:32:01 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-29 11:32:01 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-29 11:32:01 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-29 11:32:02 [com.cn.redis.RedisClientTemplate:40]-[ERROR] ERR Client sent AUTH, but no password is set
+redis.clients.jedis.exceptions.JedisDataException: ERR Client sent AUTH, but no password is set
+	at redis.clients.jedis.Protocol.processError(Protocol.java:127)
+	at redis.clients.jedis.Protocol.process(Protocol.java:161)
+	at redis.clients.jedis.Protocol.read(Protocol.java:215)
+	at redis.clients.jedis.Connection.readProtocolWithCheckingBroken(Connection.java:340)
+	at redis.clients.jedis.Connection.getStatusCodeReply(Connection.java:239)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:96)
+	at redis.clients.jedis.Connection.sendCommand(Connection.java:126)
+	at redis.clients.jedis.BinaryClient.set(BinaryClient.java:110)
+	at redis.clients.jedis.Client.set(Client.java:47)
+	at redis.clients.jedis.Jedis.set(Jedis.java:120)
+	at redis.clients.jedis.ShardedJedis.set(ShardedJedis.java:43)
+	at com.cn.redis.RedisClientTemplate.set(RedisClientTemplate.java:38)
+	at test.test1.testRdis_GAOBINGFA(test1.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+2018-05-29 11:32:02 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 11:32:01 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 12:18:49 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-29 12:18:49 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-29 12:18:50 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-29 12:18:50 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 12:18:50 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 12:18:50 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-29 12:18:50 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-29 12:18:50 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-29 12:18:50 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 12:18:50 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 12:19:14 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-29 12:19:14 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-29 12:19:15 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-29 12:19:15 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 12:19:15 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 12:19:15 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-29 12:19:15 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-29 12:19:15 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-29 12:19:17 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 12:19:15 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 12:19:41 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-29 12:19:41 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-29 12:19:41 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-29 12:19:41 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 12:19:41 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 12:19:41 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-29 12:19:41 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-29 12:19:41 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-29 12:19:44 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 12:19:41 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 12:21:56 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-29 12:21:56 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-29 12:21:56 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-29 12:21:56 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 12:21:56 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 12:21:56 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-29 12:21:56 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-29 12:21:56 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-29 12:21:59 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 12:21:56 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 12:27:34 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-29 12:27:34 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-29 12:27:34 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-29 12:27:34 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 12:27:34 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 12:27:34 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-29 12:27:34 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-29 12:27:34 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-29 12:27:35 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 12:27:34 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 12:28:20 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-29 12:28:20 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-29 12:28:20 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-29 12:28:20 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 12:28:20 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 12:28:20 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-29 12:28:20 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-29 12:28:20 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-29 12:28:23 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 12:28:20 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 13:35:36 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-29 13:35:36 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-29 13:35:36 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-29 13:35:36 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 13:35:36 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 13:35:36 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-29 13:35:36 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-29 13:35:36 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-29 13:35:39 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 13:35:36 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 13:36:38 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-29 13:36:38 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-29 13:36:38 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-29 13:36:38 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 13:36:38 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 13:36:38 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-29 13:36:38 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-29 13:36:38 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-29 13:36:41 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 13:36:38 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 13:39:58 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-29 13:39:58 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-29 13:39:59 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-29 13:39:59 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 13:39:59 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 13:39:59 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-29 13:39:59 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-29 13:39:59 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-29 13:40:01 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 13:39:59 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 13:44:24 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-29 13:44:24 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-29 13:44:24 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-29 13:44:24 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 13:44:24 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 13:44:24 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-29 13:44:24 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-29 13:44:24 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-29 13:44:25 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 13:44:24 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 13:48:18 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-29 13:48:18 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-29 13:48:19 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-29 13:48:19 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 13:48:19 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 13:48:19 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-29 13:48:19 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-29 13:48:19 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-29 13:48:19 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 13:48:19 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 13:49:39 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-29 13:49:39 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-29 13:49:39 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-29 13:49:39 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 13:49:39 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 13:49:39 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-29 13:49:39 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-29 13:49:39 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-29 13:49:40 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 13:49:39 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 13:50:15 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-29 13:50:16 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-29 13:50:16 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-29 13:50:16 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 13:50:16 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 13:50:16 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-29 13:50:16 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-29 13:50:16 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-29 13:50:16 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 13:50:16 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 13:51:04 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-29 13:51:05 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-29 13:51:05 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-29 13:51:05 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 13:51:05 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 13:51:05 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-29 13:51:05 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-29 13:51:05 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-29 13:51:05 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 13:51:05 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 13:52:17 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-29 13:52:17 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-29 13:52:17 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-29 13:52:17 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 13:52:17 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 13:52:17 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-29 13:52:17 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-29 13:52:17 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-29 13:52:47 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 13:52:17 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 13:53:14 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-29 13:53:14 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-29 13:53:14 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-29 13:53:14 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 13:53:14 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 13:53:14 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-29 13:53:14 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-29 13:53:14 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-29 13:53:58 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-29 13:53:58 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-29 13:53:58 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-29 13:53:58 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 13:53:58 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 13:53:58 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-29 13:53:58 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-29 13:53:58 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-29 13:53:59 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 13:53:58 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 14:07:04 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-29 14:07:04 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-29 14:07:04 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-29 14:07:04 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 14:07:04 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 14:07:04 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-29 14:07:04 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-29 14:07:04 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-29 14:07:05 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 14:07:04 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 14:18:14 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-29 14:18:14 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-29 14:18:14 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-29 14:18:14 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 14:18:14 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 14:18:15 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-29 14:18:15 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-29 14:18:15 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-29 14:20:15 [org.springframework.context.support.GenericApplicationContext:873]-[INFO] Closing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 14:18:14 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 14:20:31 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-29 14:20:31 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-29 14:20:31 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-29 14:20:31 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 14:20:31 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 14:20:32 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-29 14:20:32 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-29 14:20:32 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-29 14:21:00 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-29 14:21:00 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-29 14:21:00 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-29 14:21:00 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 14:21:00 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 14:21:00 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-29 14:21:00 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-29 14:21:00 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-29 14:24:26 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-29 14:24:26 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-29 14:24:26 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-29 14:24:26 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 14:24:26 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 14:24:26 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-29 14:24:26 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-29 14:24:26 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]
+2018-05-29 14:27:15 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [mybatis/spring-mybatis-oracle.xml]
+2018-05-29 14:27:15 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [spring/spring-service.xml]
+2018-05-29 14:27:15 [org.springframework.beans.factory.xml.XmlBeanDefinitionReader:316]-[INFO] Loading XML bean definitions from class path resource [redis/spring-redis.xml]
+2018-05-29 14:27:15 [org.springframework.context.support.GenericApplicationContext:513]-[INFO] Refreshing org.springframework.context.support.GenericApplicationContext@2c9f9fb0: startup date [Tue May 29 14:27:15 GMT+08:00 2018]; root of context hierarchy
+2018-05-29 14:27:15 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [jdbc.properties]
+2018-05-29 14:27:15 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [path.properties]
+2018-05-29 14:27:15 [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer:172]-[INFO] Loading properties file from class path resource [redis.properties]

@@ -13,6 +13,7 @@
         <param-value>
         	<!-- DAO SERVICE 生成bean 纳入spring管理 -->
 			classpath:mybatis/spring-mybatis-oracle.xml
+			classpath:redis/spring-redis.xml
 			classpath:spring/spring-service.xml
 			<!-- CAS 单点配置文件
 			classpath:cas/casclient.xml
@@ -74,7 +75,7 @@
         </user-data-constraint>
     </security-constraint>
     
-    <!-- CAS 单点  -->
+    <!-- CAS 单点登录  -->
     <!-- 登出
     <listener>
         <listener-class>org.jasig.cas.client.session.SingleSignOutHttpSessionListener</listener-class>
