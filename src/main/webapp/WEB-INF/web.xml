@@ -14,6 +14,7 @@
         	<!-- DAO SERVICE 生成bean 纳入spring管理 -->
 			classpath:mybatis/spring-mybatis-oracle.xml
 			classpath:redis/spring-redis.xml
+			classpath:hadoop/spring-hadoop.xml
 			classpath:spring/spring-service.xml
 			<!-- CAS 单点配置文件
 			classpath:cas/casclient.xml

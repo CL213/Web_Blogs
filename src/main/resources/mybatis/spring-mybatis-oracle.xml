@@ -4,7 +4,6 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
 	                    http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
-	<!-- 配置整合mybatis和数据库，并将其添加到spring中管理 -->
 	<!-- 引入参数配置文件.properties -->
     <bean id="propertyConfigurer"
         class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
@@ -13,6 +12,7 @@
         		<value>classpath:jdbc.properties</value>
         		<value>classpath:path.properties</value>
         		<value>classpath:redis.properties</value>
+        		<value>classpath:hadoop.properties</value>
         	</list>
         </property>
         <property name="fileEncoding">
@@ -20,6 +20,7 @@
         </property>
     </bean>
     
+    <!-- 配置整合mybatis和数据库，并将其添加到spring中管理 -->
     <bean id="downloadPath" class="java.lang.String">
 		<constructor-arg index="0" value="${DOWNLOADPATH}"></constructor-arg>
 	</bean>

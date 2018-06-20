@@ -4,6 +4,8 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import com.cn.redis.impl.JedisDataSourceImpl;
+
 import redis.clients.jedis.ShardedJedis;
 
 //具体的Jedis操作类
